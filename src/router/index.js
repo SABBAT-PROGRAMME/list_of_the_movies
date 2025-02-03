@@ -9,22 +9,27 @@ import MoviesDetails from "@/views/MoviesDetails.vue";
 const routes = [
   {
     path: "/",
+    name: "Home",
     component: Home,
   },
   {
     path: "/about",
+    name: "About",
     component: About,
   },
   {
     path: "/movies",
+    name: "Movies",
     component: Movies,
   },
   {
     path: "/movies/:id",
+    name: "MoviesDetails",
     component: MoviesDetails,
   },
   {
     path: "/:catchAll(.*)",
+    name: "NotFound",
     component: NotFound,
   },
 ];

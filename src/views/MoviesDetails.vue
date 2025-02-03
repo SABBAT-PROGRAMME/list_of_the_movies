@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Movie {{ $route.params.id }} details page</h1>
+    <!-- <h1>Movie {{ $route.params.title }} details page</h1> -->
+    <h1>{{ queryMovie.title }}</h1>
   </div>
 
   <section class="bg-white dark:bg-gray-900 m-6 p-4">
@@ -55,6 +56,7 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 const queryMovie = ref({});
 const url = "/database/db.json";
+const isLoading = ref(false);
 
 onMounted(() => {
   const id = route.params.id;
