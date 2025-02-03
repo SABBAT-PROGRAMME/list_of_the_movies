@@ -4,6 +4,7 @@ import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Movies from "@/views/Movies.vue";
 import NotFound from "@/views/NotFound.vue";
+import MoviesDetails from "@/views/MoviesDetails.vue";
 
 const routes = [
   {
@@ -17,6 +18,10 @@ const routes = [
   {
     path: "/movies",
     component: Movies,
+  },
+  {
+    path: "/movies/:id",
+    component: MoviesDetails,
   },
   {
     path: "/:catchAll(.*)",
