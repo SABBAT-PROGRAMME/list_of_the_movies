@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Movies from "@/views/Movies.vue";
+import Download from "@/views/Download.vue";
 import NotFound from "@/views/NotFound.vue";
 import MoviesDetails from "@/views/MoviesDetails.vue";
 
@@ -22,6 +23,12 @@ const routes = [
     name: "Movies",
     component: Movies,
   },
+  {
+    path: "/download",
+    name: "Download",
+    component: Download,
+  },
+
   {
     path: "/movies/:id",
     name: "MoviesDetails",
